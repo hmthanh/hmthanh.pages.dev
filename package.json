@@ -18,8 +18,8 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.45.3",
-		"@sveltejs/adapter-cloudflare": "^5.0.0",
 		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-cloudflare": "^5.0.0",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.15.2",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
@@ -39,8 +39,8 @@
 	},
 	"dependencies": {
 		"@shikijs/rehype": "^1.26.2",
-		
 		"@tailwindcss/typography": "^0.5.16",
+		"dayjs": "^1.11.13",
 		"rehype-katex": "^7.0.1",
 		"rehype-pretty-code": "^0.14.0",
 		"rehype-slug": "^6.0.0",
@@ -49,6 +49,8 @@
 		"remark-math": "^6.0.0",
 		"remark-reading-time": "^2.0.1",
 		"remark-toc": "^9.0.0",
-		"sirv-cli": "^3.0.0"
+		"shiki": "^1.27.0",
+		"sirv-cli": "^3.0.0",
+		"vanilla-lazyload": "^19.1.3"
 	}
 }

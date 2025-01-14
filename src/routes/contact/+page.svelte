@@ -1,8 +1,8 @@
 <script>
 	import Card from '$lib/components/Card.svelte'
-	import EmailIcon from '$lib/icons/email.svelte'
+	import EmailIcon from '$lib/icons/email.svelte.txt'
 	import website from '$lib/config/website'
-	import ExternalLink from '$lib/ui/a_blank.svelte'
+	import ExternalLink from '../../layout/ui/a_blank.svelte'
 	import Twitter from '$lib/icons/twitter.svelte'
 
 	const { contactEmail } = website
