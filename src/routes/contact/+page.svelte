@@ -5,7 +5,7 @@
 	import ExternalLink from '$lib/ui/a_blank.svelte'
 	import Twitter from '$lib/icons/twitter.svelte'
 
-	const { contactEmail, facebookPageName, telegramUsername, twitterUserId, twitterUsername } = website
+	const { contactEmail } = website
 	import SEO from '$lib/components/SEO/index.svelte'
 
 	let title = 'Contact'
