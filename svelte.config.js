@@ -1,7 +1,7 @@
 // import { join } from "path";
 import { escapeSvelte, mdsvex } from "mdsvex"
-import adapter from "@sveltejs/adapter-static"
-// import adapter from "@sveltejs/adapter-cloudflare"
+// import adapter from "@sveltejs/adapter-static"
+import adapter from "@sveltejs/adapter-cloudflare"
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte"
 import remarkToc from "remark-toc"
 import rehypeKatex from "rehype-katex"
