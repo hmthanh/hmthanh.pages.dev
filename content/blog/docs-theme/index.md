@@ -14,10 +14,6 @@ categories: ""
 tags: ""
 ---
 
-<script>
-  import Canvas from "$lib/components/Canvas.svelte"
-</script>
-
 # Docs Theme
 
 Nextra Docs Theme is a theme that includes almost everything you need to build a

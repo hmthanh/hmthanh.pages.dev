@@ -14,7 +14,6 @@ categories: ""
 tags: ""
 ---
 
-
 # Docs Theme
 
 Nextra Docs Theme is a theme that includes almost everything you need to build a
@@ -38,3 +37,25 @@ You can also manually fork the
 [template repository](https://github.com/shuding/nextra-docs-template).
 
 ## Start as New Project
+
+To create a Nextra Docs site manually, you have to install **Next.js**,
+**React**, **Nextra**, and **Nextra Docs Theme**. In your project directory, run
+the following command to install the dependencies:
+
+```sh npm2yarn
+npm i next react react-dom nextra nextra-theme-docs
+```
+
+Add the following scripts in `package.json`:
+
+```json filename="package.json"
+"scripts": {
+  "dev": "next",
+  "build": "next build",
+  "start": "next start"
+},
+```
+
+You can either start the server with, for example if you use npm, `npm run dev`,
+which will run in development mode or `npm run build && npm run start` for
+production mode.

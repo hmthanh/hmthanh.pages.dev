@@ -2,6 +2,10 @@
 	import BlogList from "$components/BlogList/BlogList.svelte"
 	import Cobe from "$components/Cobe.svelte"
 
+	import { page } from "$app/stores"
+
+	$: currentPath = $page.url.pathname
+
 	/** @type {import('./$types').PageData} */
 	export let data
 	const { posts } = data
@@ -187,7 +191,7 @@
 	</div>
 	<div class="mb-20 mt-16 text-center">
 		<p class="mt-6 leading-7 first:mt-0">
-			<a class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]" href="/docs/">Get Started</a>
+			<a class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]" href="/docs-theme">Get Started</a>
 			·
 			<a class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]" href="/">Examples</a>
 			·
@@ -370,7 +374,7 @@
 		<li class="my-2">React Suspense</li>
 	</ul>
 	<p class="mt-6 leading-7 first:mt-0">
-		And a lot <a class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]" href="/docs/">more</a>.
+		And a lot <a class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]" href="/docs-theme/">more</a>.
 	</p>
 	<h2
 		class="mt-10 border-b border-neutral-200/70 pb-1 text-3xl font-semibold tracking-tight text-slate-900 contrast-more:border-neutral-400 dark:border-primary-100/10 dark:text-slate-100 contrast-more:dark:border-neutral-400"
@@ -404,6 +408,8 @@
 		</a>!
 	</p>
 </main>
+
+<p>Visit dynamic routes like <a href="/docs-theme">/docs-theme</a></p>
 
 <style lang="css">
 </style>
