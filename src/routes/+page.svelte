@@ -1,10 +1,11 @@
 <script>
-  import BlogList from "$components/BlogList/BlogList.svelte"
+	import BlogList from "$components/BlogList/BlogList.svelte"
+	import Cobe from "$components/Cobe.svelte"
 
 	/** @type {import('./$types').PageData} */
 	export let data
 	const { posts } = data
-  // console.log("posts", posts)
+	// console.log("posts", posts)
 </script>
 
 <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
@@ -161,6 +162,7 @@
         </div>
       </div>
     </div> -->
+	<Cobe />
 	<BlogList {posts} />
 	<p class="mt-6 leading-7 first:mt-0">
 		The name “Pithagon” is derived from <code
