@@ -173,14 +173,24 @@
 			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
 			dir="ltr">stale-while-revalidate</code
 		>, a HTTP cache invalidation strategy popularized by
-		<a href="https://tools.ietf.org/html/rfc5861" target="_blank" rel="noreferrer" class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
+		<a
+			href="https://tools.ietf.org/html/rfc5861"
+			target="_blank"
+			rel="noreferrer"
+			class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
 			>HTTP RFC 5861<span class="sr-only select-none"> (opens in a new tab)</span>
-		</a>. Pithagon is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the up-to-date data.
+		</a>. Pithagon is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the
+		up-to-date data.
 	</p>
 	<div
 		class="nextra-callout mt-6 flex overflow-x-auto rounded-lg border border-orange-100 bg-orange-50 py-2 text-orange-800 contrast-more:border-current dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300 contrast-more:dark:border-current ltr:pr-4 rtl:pl-4"
 	>
-		<div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pl-2 rtl:pr-3" style="font-family:&quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;">✅</div>
+		<div
+			class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pl-2 rtl:pr-3"
+			style="font-family:&quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;"
+		>
+			✅
+		</div>
 		<div class="w-full min-w-0 leading-7">
 			<p class="mt-6 leading-7 first:mt-0">
 				With Pithagon, components will get a stream of data updates <strong>constantly</strong> and
@@ -197,7 +207,11 @@
 			·
 			<a class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]" href="/">Blog</a>
 			·
-			<a href="https://github.com/pithagon/pithagon.github.io" target="_blank" rel="noreferrer" class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
+			<a
+				href="https://github.com/pithagon/pithagon.github.io"
+				target="_blank"
+				rel="noreferrer"
+				class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
 				>GitHub Repository<span class="sr-only select-none"> (opens in a new tab)</span>
 			</a>
 		</p>
@@ -293,7 +307,11 @@
 				title="Toggle word wrap"
 			>
 				<svg viewBox="0 0 24 24" width="24" height="24" class="pointer-events-none h-4 w-4">
-					<path fill="currentColor" d="M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"> </path>
+					<path
+						fill="currentColor"
+						d="M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"
+					>
+					</path>
 				</svg>
 			</button>
 			<button
@@ -302,9 +320,23 @@
 				title="Copy code"
 				tabindex="0"
 			>
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="nextra-copy-icon pointer-events-none h-4 w-4">
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					stroke="currentColor"
+					class="nextra-copy-icon pointer-events-none h-4 w-4"
+				>
 					<rect x="9" y="9" width="13" height="13" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> </rect>
-					<path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> </path>
+					<path
+						d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+					</path>
 				</svg>
 			</button>
 		</div>
@@ -315,19 +347,28 @@
 			dir="ltr">usePithagon</code
 		>
 		hook accepts a
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr">key</code>
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">key</code
+		>
 		string and a
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr"
-			>fetcher</code
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">fetcher</code
 		>
 		function.
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr">key</code>
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">key</code
+		>
 		is a unique identifier of the data (normally the API URL) and will be passed to
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr"
-			>fetcher</code
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">fetcher</code
 		>.
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr"
-			>fetcher</code
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">fetcher</code
 		> can be any asynchronous function which returns the data, you can use the native fetch or tools like Axios.
 	</p>
 	<p class="mt-6 leading-7 first:mt-0">
@@ -335,11 +376,14 @@
 			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
 			dir="ltr">data</code
 		>,
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr"
-			>isLoading</code
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">isLoading</code
 		>
 		and
-		<code class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10" dir="ltr">error</code
+		<code
+			class="break-words rounded-md border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-[.25em] py-0.5 text-[.9em] dark:border-white/10 dark:bg-white/10"
+			dir="ltr">error</code
 		>, based on the status of the request.
 	</p>
 	<h2
@@ -347,7 +391,10 @@
 	>
 		Features<a href="#features" id="features" class="subheading-anchor" aria-label="Permalink for this section"> </a>
 	</h2>
-	<p class="mt-6 leading-7 first:mt-0">With just one single line of code, you can simplify the logic of data fetching in your project, and also have all these amazing features out-of-the-box:</p>
+	<p class="mt-6 leading-7 first:mt-0">
+		With just one single line of code, you can simplify the logic of data fetching in your project, and also have all these amazing features
+		out-of-the-box:
+	</p>
 	<ul class="mt-6 list-disc first:mt-0 ltr:ml-6 rtl:mr-6">
 		<li class="my-2">
 			<strong>Fast</strong>, <strong>lightweight</strong> and <strong>reusable</strong> data fetching
@@ -361,7 +408,9 @@
 		<li class="my-2">TypeScript ready</li>
 		<li class="my-2">React Native</li>
 	</ul>
-	<p class="mt-6 leading-7 first:mt-0">Pithagon has you covered in all aspects of speed, correctness, and stability to help you build better experiences:</p>
+	<p class="mt-6 leading-7 first:mt-0">
+		Pithagon has you covered in all aspects of speed, correctness, and stability to help you build better experiences:
+	</p>
 	<ul class="mt-6 list-disc first:mt-0 ltr:ml-6 rtl:mr-6">
 		<li class="my-2">Fast page navigation</li>
 		<li class="my-2">Polling on interval</li>
@@ -394,7 +443,11 @@
 			class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
 			>Next.js<span class="sr-only select-none"> (opens in a new tab)</span>
 		</a>, the React framework. Follow
-		<a href="https://twitter.com/vercel" target="_blank" rel="noreferrer" class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
+		<a
+			href="https://twitter.com/vercel"
+			target="_blank"
+			rel="noreferrer"
+			class="text-primary-600 underline decoration-from-font [text-underline-position:from-font]"
 			>@vercel<span class="sr-only select-none"> (opens in a new tab)</span>
 		</a> on Twitter for future project updates.
 	</p>

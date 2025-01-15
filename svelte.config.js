@@ -6,6 +6,8 @@ import { vitePreprocess } from "@sveltejs/vite-plugin-svelte"
 import remarkToc from "remark-toc"
 import rehypeKatex from "rehype-katex"
 import rehypeSlug from "rehype-slug"
+import rehypeParse from "rehype-parse"
+// import rehypeKatexSvelte from "rehype-katex-svelte"
 import rehypePrettyCode from "rehype-pretty-code"
 import remarkGfm from "remark-gfm"
 import remarkMath from "remark-math"
@@ -13,7 +15,7 @@ import remarkReadingTime from "remark-reading-time"
 import remarkFrontmatter from "remark-frontmatter"
 import rehypeShiki from "@shikijs/rehype"
 import { valueToEstree } from "estree-util-value-to-estree"
-import { getHighlighter, createHighlighter } from "shiki"
+import { createHighlighter } from "shiki"
 import yaml from "yaml"
 
 // import { remarkCustomHeadingId } from "./remarkplugins/remark-custom-heading-id.js"
@@ -166,7 +168,13 @@ const mdsvexOptions = {
 		}
 	},
 	remarkPlugins: [remarkFrontmatter, remarkReadingTime, remarkGfm, remarkMath, [remarkToc, { tight: true }]],
-	rehypePlugins: [remarkMath, [rehypeKatex, {}], [rehypeShiki, { theme: "github-dark" }], rehypeSlug, [rehypePrettyCode, { ...DEFAULT_REHYPE_PRETTY_CODE_OPTIONS }]],
+	rehypePlugins: [
+		// [rehypeParse, { fragment: true }],
+		import('rehype-katex'),
+		[rehypeShiki, { theme: "github-dark" }],
+		rehypeSlug,
+		[rehypePrettyCode, { ...DEFAULT_REHYPE_PRETTY_CODE_OPTIONS }]
+	],
 	layout: "./src/layout/article.svelte"
 }
 

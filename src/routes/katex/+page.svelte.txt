@@ -1,0 +1,8 @@
+<script>
+	let data = $props()
+</script>
+
+<article>
+	{@html data.content}
+	abc
+</article>
